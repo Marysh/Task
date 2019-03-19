@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'Tahoma';
+  src: url('fonts/tahoma.eot');
+  src: local('☺'), url('fonts/tahoma.woff') format('woff'),
+  url('fonts/tahoma.ttf') format('truetype'),
+  url('fonts/tahoma.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+.wrapper {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto
+}
+
+
+.btn { //button
+  display: inline-block;
+  white-space: nowrap;
+  vertical-align: middle;
+  min-width: 115px;
+  padding: 7px 25px 7px 25px;
+  font: 400 13px 'Tahoma';
+  color: #ffffff;
+  text-transform: capitalize;
+  text-align: center;
+  transition: 0.3s;
+  &:hover {
+    background-color: #72130c;
+    cursor: pointer;
+  }
+}
+
+h2 {
+  color: #000;
+  font: 700 14px 'Tahoma';
+  margin-bottom: 9px;
+  text-align: center;
+}
+
+p {
+  color: #8c8c8c;
+  font: 400 14px 'Times New Roman';
+  margin-bottom: 20px;
+  line-height: 1.2;
+  text-align: justify;
+}
+
+
+
+@media (min-width: 576px) {
+  .wrapper {
+    max-width: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    max-width: 538px;
+  }
+  h2 {
+    font-size: 18px;
+  }
+  h2,
+  p {
+    text-align: left;
+    padding: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  .wrapper {
+    max-width: 695px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .wrapper {
+    max-width: 841px;
+  }
+}
